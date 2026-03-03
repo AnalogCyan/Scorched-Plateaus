@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:stone_pickaxe"},
+    "title": {"text": "Tempered by Heat"},
+    "description": {"text": "Craft a better pickaxe — the heat hardens what it doesn't destroy"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/mine_stone",
+  "criteria": {
+    "stone_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": "minecraft:stone_pickaxe"}]
+      }
+    }
+  }
+}

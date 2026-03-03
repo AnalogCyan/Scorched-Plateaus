@@ -1,0 +1,34 @@
+name: Release Data Pack
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Package data pack
+        run: |
+          zip -r Scorched-Plateaus.zip . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "*.zip"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: release-${{ steps.date.outputs.date }}-${{ github.run_number }}
+          name: "Scorched Plateaus - MC 26.1 Snapshot 10 - ${{ steps.date.outputs.date }}"
+          files: Scorched-Plateaus.zip
+          generate_release_notes: true

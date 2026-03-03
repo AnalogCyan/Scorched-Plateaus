@@ -1,0 +1,17 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_sword"},
+    "title": {"text": "First Blood in the Sand"},
+    "description": {"text": "Kill a hostile creature in the scorching heat"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "killed_something": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  }
+}

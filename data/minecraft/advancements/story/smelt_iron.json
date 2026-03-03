@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:iron_ingot"},
+    "title": {"text": "Desert Iron"},
+    "description": {"text": "Smelt iron ore from beneath the scorched badlands"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/upgrade_tools",
+  "criteria": {
+    "iron_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": "minecraft:iron_ingot"}]
+      }
+    }
+  }
+}

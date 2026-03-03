@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:gilded_blackstone"},
+    "title": {"text": "Gilded Ruins"},
+    "description": {"text": "Find a bastion remnant in the blazing depths"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "in_bastion": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "structures": "minecraft:bastion_remnant"
+        }
+      }
+    }
+  }
+}

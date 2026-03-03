@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:wheat_seeds"},
+    "title": {"text": "Seeds in the Dust"},
+    "description": {"text": "Plant a seed in the scorched soil and hope it grows"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "planted_seed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{"items": "#minecraft:villager_plantable_seeds"}]
+      }
+    }
+  }
+}

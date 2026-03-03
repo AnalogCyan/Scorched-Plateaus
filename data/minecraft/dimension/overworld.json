@@ -1,0 +1,72 @@
+{
+  "type": "overworld",
+  "generator": {
+    "type": "noise",
+    "biome_source": {
+      "type": "multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:badlands",
+          "parameters": {
+            "temperature": [-0.5, 1.0],
+            "humidity": [-0.25, 1.0],
+            "continentalness": [-1.0, 1.0],
+            "erosion": [-1.0, 1.0],
+            "weirdness": [-1.0, 1.0],
+            "depth": [-1.0, 1.0],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "minecraft:eroded_badlands",
+          "parameters": {
+            "temperature": [-0.5, 1.0],
+            "humidity": [-1.0, -0.25],
+            "continentalness": [-1.0, 1.0],
+            "erosion": [-1.0, 1.0],
+            "weirdness": [-1.0, 1.0],
+            "depth": [-1.0, 1.0],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "minecraft:wooded_badlands",
+          "parameters": {
+            "temperature": [-1.0, -0.5],
+            "humidity": [0.0, 1.0],
+            "continentalness": [-1.0, 1.0],
+            "erosion": [-1.0, 1.0],
+            "weirdness": [-1.0, 1.0],
+            "depth": [-1.0, 1.0],
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "minecraft:desert",
+          "parameters": {
+            "temperature": [0.5, 1.0],
+            "humidity": [-1.0, -0.25],
+            "continentalness": [-1.0, 1.0],
+            "erosion": [-1.0, 1.0],
+            "weirdness": [-1.0, 1.0],
+            "depth": [-1.0, 1.0],
+            "offset": 0.375
+          }
+        },
+        {
+          "biome": "minecraft:windswept_savanna",
+          "parameters": {
+            "temperature": [-1.0, -0.5],
+            "humidity": [-1.0, 0.0],
+            "continentalness": [-1.0, 1.0],
+            "erosion": [-1.0, 1.0],
+            "weirdness": [-1.0, 1.0],
+            "depth": [-1.0, 1.0],
+            "offset": 0.5
+          }
+        }
+      ]
+    },
+    "settings": "scorched:scorched_overworld"
+  }
+}

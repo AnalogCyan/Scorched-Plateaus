@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wheat"
+    },
+    "title": {
+      "text": "Life in the Wasteland"
+    },
+    "description": {
+      "text": "Breed two animals in the scorching heat"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "bred_animals": {
+      "trigger": "minecraft:bred_animals"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bow"
+    },
+    "title": {
+      "text": "Blazing Arrow"
+    },
+    "description": {
+      "text": "Loose an arrow across the blistering wasteland"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "shot_something": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "direct_entity": {
+            "type": "minecraft:arrow"
+          }
+        }
+      }
+    }
+  }
+}

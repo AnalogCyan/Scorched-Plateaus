@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:warped_fungus_on_a_stick"
+    },
+    "title": {
+      "text": "Lava Crossing"
+    },
+    "description": {
+      "text": "Ride a strider across the molten seas of the scorched nether"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "mount_strider": {
+      "trigger": "minecraft:started_riding"
+    }
+  }
+}

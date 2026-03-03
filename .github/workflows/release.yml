@@ -29,6 +29,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: release-${{ steps.date.outputs.date }}-${{ github.run_number }}
-          name: "Scorched Plateaus - MC 26.1 Snapshot 10 - ${{ steps.date.outputs.date }}"
+          name: "Scorched Plateaus - MC 26.1 Snapshot 11 - ${{ steps.date.outputs.date }}"
           files: Scorched-Plateaus.zip
           generate_release_notes: true

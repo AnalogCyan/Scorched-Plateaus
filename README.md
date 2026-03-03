@@ -22,11 +22,6 @@ _Scorched Plateaus_ is a data pack for Minecraft that transforms the survival ex
 - 29 rethemed advancements across all 5 tabs (Story, Nether, End, Adventure, Husbandry)
 - Badlands-themed names and descriptions throughout
 
-## Compatibility
-
-- **Minecraft**: 26.1 Snapshot 10+
-- **Loader**: Fabric Loader 0.18.4+ (or any loader supporting data packs)
-
 ## Installation
 
 1. Download the latest `Scorched-Plateaus.zip` file from the [releases](https://github.com/AnalogCyan/Scorched-Plateaus/releases) page.
